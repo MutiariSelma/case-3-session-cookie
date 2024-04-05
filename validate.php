@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Start the session and set the loggedIn flag
             session_start();
             $_SESSION['loggedIn'] = true;
+            $_SESSION['email'] = $email;
             echo 'success';
             exit;
         }

@@ -38,7 +38,7 @@ if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] !== true) {
 <body>
     <div class="container mt-5">
         <h1 class="text-center">Welcome to the Profile Page</h1>
-        <p>Your email: <?php echo $_SESSION['loggedIn']; ?></p>
+        <p>Your email: <?php echo $_SESSION['email']; ?></p>
         <p class="text-center">You are logged in.</p>
         <div class="text-center">
             <a href="logout.php" class="btn btn-primary">Logout</a>
